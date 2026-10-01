@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="../CSS/index.css" />
+  <title>Movie Reviewer</title>
+</head>
+
+<body>
+
+<header>
+  <h1>All Movie Reviews</h1>
+
+  <!-- Nav bar -->
+  <nav>
+    <ul>
+      <li><a href="../HTML/index.html">Home</a></li>
+      <li><a href="../HTML/browseMovies.html">Browse Movies</a></li>
+      <li><a href="../HTML/contact.html">Contact</a></li>
+      <li><a href="../HTML/sumbittedReviews.html">Your Reviews</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Section for submitting a new review -->
+<section id="submitReviewSection">
+  <h2>Submit your movie review</h2>
+
+  <form id="movieReviewForm">
+
+    <!-- Movie title input with suggestions -->
+    <label for="movieTitle">Movie Title</label>
+    <input list="movieTitles" id="movieTitle" name="movieTitle" placeholder="Enter Movie Name..." required />
+
+    <datalist id="movieTitles">
+      <option value="Stranger Things"></option>
+      <option value="Back to the Future"></option>
+      <option value="Up"></option>
+      <option value="Madagascar"></option>
+      <option value="The Godfather"></option>
+    </datalist>
+
+    <!-- Genre input -->
+    <label for="genre">Genre</label>
+    <input list="genres" id="genre" name="genre" placeholder="Select or type genre..." required />
+
+    <datalist id="genres">
+      <option value="Action"></option>
+      <option value="Comedy"></option>
+      <option value="Drama"></option>
+      <option value="Horror"></option>
+      <option value="Sci-Fi"></option>
+      <option value="Romance"></option>
+    </datalist>
+
+    <!-- Rating radio buttons -->
+    <fieldset>
+      <legend>Rating</legend>
+      <label><input type="radio" name="rating" value="1" required /> 1 Star</label>
+      <label><input type="radio" name="rating" value="2" /> 2 Stars</label>
+      <label><input type="radio" name="rating" value="3" /> 3 Stars</label>
+      <label><input type="radio" name="rating" value="4" /> 4 Stars</label>
+      <label><input type="radio" name="rating" value="5" /> 5 Stars</label>
+    </fieldset>
+
+    <!-- Review text area -->
+    <label for="reviewText">Your Review</label>
+    <textarea id="reviewText" name="reviewText" placeholder="Write your review here..." required minlength="10"></textarea>
+
+    <!-- Checkboxes for where the movie was watched -->
+    <fieldset>
+      <legend>Where did you watch this movie?</legend>
+      <label><input type="checkbox" value="Watched in theater" /> Watched in cinema</label><br />
+      <label><input type="checkbox" value="Watched on TV" /> Watched on TV</label><br />
+      <label><input type="checkbox" value="Watched on streaming service" /> Watched on streaming service</label>
+    </fieldset>
+
+    <!-- Submit button for the form -->
+    <button type="submit">Submit Review</button>
+  </form>
+</section>
+
+<script src="../JS/index.js"></script>
+
+</body>
+</html>
+

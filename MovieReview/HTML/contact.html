@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../CSS/contact.css" />
+  <title>Movie Reviewer</title>
+</head>
+<body>
+    
+<header>
+  <h1>All Movie Reviews</h1>
+
+  <!-- Nav Bar -->
+  <nav>
+    <ul>
+      <li><a href="../HTML/index.html">Home</a></li>
+      <li><a href="../HTML/browseMovies.html">Browse Movies</a></li>
+      <li><a href="../HTML/contact.html">Contact</a></li>
+      <li><a href="../HTML/sumbittedReviews.html">Your Reviews</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="container">
+  <div>
+    <h2>Contact Us</h2>
+  </div>
+  <p>If you have any questions, please fill out the form below and we'll get back to you:</p>
+
+  <div class="container">
+
+    <!-- When submitted, it will go to comfirmation.html -->
+    <form action="comfirmation.html" id="confirm">
+
+      <!-- First name input -->
+      <label id="fname" for="firstname">First Name</label>
+      <input type="text" name="firstname" id="firstname"/>
+
+      <!-- Last name input -->
+      <label id="lname" for="lastname">Last Name</label>
+      <input type="text" name="lastname" id="lastname"/>
+
+      <!-- Email input -->
+      <label id="email" for="email">Email</label>
+      <input type="email" name="email" placeholder="example@gmail.com"/>
+
+      <!-- Password input -->
+      <label id="pass" for="password">Password</label>
+      <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"/>
+
+      <!-- Message box -->
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+      <br>
+
+      <!-- Submit button -->
+      <button type="submit">Submit</button>
+
+    </form>
+  </div>
+</div>
+
+<script src="../JS/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+
+/* Body styles */
+body {
+    color: white; 
+    font-family: Arial, sans-serif;
+    background: url("../Images//bg.jpg");
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    margin-bottom: 30px;
+}
+
+/* Page title */
+header h1 {
+    display: inline-block;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+
+h2{
+    display: inline-block;
+    margin-bottom: 10px;
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+/* Nav bar styles */
+nav ul {
+    list-style: none;
+    padding: 20px; 
+    margin: 20px auto; 
+  
+    gap: 15px;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+    border-radius: 5px;
+}
+
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+/* Movie Review form styles */
+#movieReviewForm{
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    margin: 20px auto;  
+    border-radius: 12px;
+    width: 90%;
+    max-width: 700px;   
+    color: white;
+}
+
+/* Sections */
+section {
+    margin-bottom: 40px;
+}
+
+/* Labels and legends */
+label, legend {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Inputs, selects, textarea styles */
+input[type="text"], input[list], select, textarea {
+    width: 100%;
+    max-width: 450px;
+    padding: 8px 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+    transition: border-color 0.3s ease;
+}
+
+
+/* Fieldset styles */
+fieldset {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255,255,255,0.1);  
+    padding: 10px 15px 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Radio buttons and checkbox labels */
+fieldset label {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+/* Submit button */
+button[type="submit"],
+#searchBtn {
+    background-color: rgb(255, 87, 34);
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+   
+}
+
+button[type="submit"]:hover,
+#searchBtn:hover {
+  background-color: rgb(230, 74, 25);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input[type="text"], input[list], select, textarea {
+    max-width: 100%;
+  }
+}
